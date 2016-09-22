@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Triangle1.cpp" />
+    <ClCompile Include="Triangle2.cpp" />
+    <ClCompile Include="Triangle3.cpp" />
+    <ClCompile Include="Texture1.cpp" />
+    <ClCompile Include="Texture2.cpp" />
+    <ClCompile Include="Transform1.cpp" />
+    <ClCompile Include="Transform2.cpp" />
+    <ClCompile Include="UseCamera1.cpp" />
+    <ClCompile Include="UseCamera2.cpp" />
+    <ClCompile Include="Light1.cpp" />
+    <ClCompile Include="Light2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Camera.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{e7069454-37ad-4984-b68c-ed82fd18bfa7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\shader.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\shader.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\texture2.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\texture2.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\texture1.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\texture1.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\transform.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\transform.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\camera.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\camera.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\lamp.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\lamp.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\lighting.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\lighting.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="light2.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="light2.fs">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
