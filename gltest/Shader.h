@@ -8,7 +8,7 @@
 
 #include <GL/glew.h>
 
-#define Light2  main
+#define Materials  main
 
 #define CURRENT_DIR(picName) ("E:\\visual studio 2013\\Projects\\opengl\\Debug\\"##picName)
 

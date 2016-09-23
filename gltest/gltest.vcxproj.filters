@@ -13,6 +13,7 @@
     <ClCompile Include="UseCamera2.cpp" />
     <ClCompile Include="Light1.cpp" />
     <ClCompile Include="Light2.cpp" />
+    <ClCompile Include="Materials.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h" />
@@ -24,30 +25,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders\shader.fs">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="shaders\shader.vs">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="shaders\texture2.fs">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="shaders\texture2.vs">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="shaders\texture1.fs">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="shaders\texture1.vs">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="shaders\transform.fs">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="shaders\transform.vs">
-      <Filter>shaders</Filter>
-    </None>
     <None Include="shaders\camera.fs">
       <Filter>shaders</Filter>
     </None>
@@ -60,16 +37,46 @@
     <None Include="shaders\lamp.vs">
       <Filter>shaders</Filter>
     </None>
-    <None Include="shaders\lighting.fs">
+    <None Include="shaders\light1.fs">
       <Filter>shaders</Filter>
     </None>
-    <None Include="shaders\lighting.vs">
+    <None Include="shaders\light1.vs">
       <Filter>shaders</Filter>
     </None>
-    <None Include="light2.vs">
+    <None Include="shaders\light2.fs">
       <Filter>shaders</Filter>
     </None>
-    <None Include="light2.fs">
+    <None Include="shaders\light2.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\materials.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\materials.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\shader.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\shader.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\texture1.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\texture1.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\texture2.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\texture2.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\transform.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\transform.vs">
       <Filter>shaders</Filter>
     </None>
   </ItemGroup>
