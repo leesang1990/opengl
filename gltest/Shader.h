@@ -8,9 +8,9 @@
 
 #include <GL/glew.h>
 
-#define Materials  main
+#define LightingMap  main
 
-#define CURRENT_DIR(picName) ("E:\\visual studio 2013\\Projects\\opengl\\Debug\\"##picName)
+#define CURRENT_DIR(picName) ("E:\\visual studio 2013\\Projects\\\opengl.git\\Debug\\"##picName)
 
 
 class Shader
