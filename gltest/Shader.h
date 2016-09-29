@@ -8,7 +8,7 @@
 
 #include <GL/glew.h>
 
-#define LightingMap  main
+#define LightCasters  main
 
 #define CURRENT_DIR(picName) ("E:\\visual studio 2013\\Projects\\\opengl.git\\Debug\\"##picName)
 

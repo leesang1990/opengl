@@ -15,6 +15,7 @@
     <ClCompile Include="Light2.cpp" />
     <ClCompile Include="Materials.cpp" />
     <ClCompile Include="LightingMap.cpp" />
+    <ClCompile Include="LightCasters.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h" />
@@ -84,6 +85,12 @@
       <Filter>shaders</Filter>
     </None>
     <None Include="shaders\lightingmap.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\lightcasters.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\lightcasters.vs">
       <Filter>shaders</Filter>
     </None>
   </ItemGroup>

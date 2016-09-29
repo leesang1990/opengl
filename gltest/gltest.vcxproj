@@ -73,6 +73,7 @@
   <ItemGroup>
     <ClCompile Include="Light1.cpp" />
     <ClCompile Include="Light2.cpp" />
+    <ClCompile Include="LightCasters.cpp" />
     <ClCompile Include="LightingMap.cpp" />
     <ClCompile Include="Materials.cpp" />
     <ClCompile Include="Texture1.cpp" />
@@ -99,6 +100,8 @@
     <None Include="shaders\light1.vs" />
     <None Include="shaders\light2.fs" />
     <None Include="shaders\light2.vs" />
+    <None Include="shaders\lightcasters.fs" />
+    <None Include="shaders\lightcasters.vs" />
     <None Include="shaders\lightingmap.fs" />
     <None Include="shaders\lightingmap.vs" />
     <None Include="shaders\materials.fs" />
