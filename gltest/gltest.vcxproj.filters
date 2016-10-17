@@ -16,6 +16,7 @@
     <ClCompile Include="Materials.cpp" />
     <ClCompile Include="LightingMap.cpp" />
     <ClCompile Include="LightCasters.cpp" />
+    <ClCompile Include="SpotLight.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h" />
@@ -91,6 +92,15 @@
       <Filter>shaders</Filter>
     </None>
     <None Include="shaders\lightcasters.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\spotlight.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\spotlight.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\spotlightsoft.fs">
       <Filter>shaders</Filter>
     </None>
   </ItemGroup>

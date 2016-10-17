@@ -76,6 +76,7 @@
     <ClCompile Include="LightCasters.cpp" />
     <ClCompile Include="LightingMap.cpp" />
     <ClCompile Include="Materials.cpp" />
+    <ClCompile Include="SpotLight.cpp" />
     <ClCompile Include="Texture1.cpp" />
     <ClCompile Include="Texture2.cpp" />
     <ClCompile Include="Transform1.cpp" />
@@ -108,6 +109,9 @@
     <None Include="shaders\materials.vs" />
     <None Include="shaders\shader.fs" />
     <None Include="shaders\shader.vs" />
+    <None Include="shaders\spotlight.fs" />
+    <None Include="shaders\spotlight.vs" />
+    <None Include="shaders\spotlightsoft.fs" />
     <None Include="shaders\texture1.fs" />
     <None Include="shaders\texture1.vs" />
     <None Include="shaders\texture2.fs" />
