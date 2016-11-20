@@ -6,7 +6,7 @@
 // GLFW
 #include <GLFW/glfw3.h>
 
-#include "Shader.h"
+#include "common/Shader.h"
 // Window dimensions
 const GLuint WIDTH = 800, HEIGHT = 600;
 

@@ -15,7 +15,7 @@
 #include <gtc/type_ptr.hpp>
 
 // Other includes
-#include "Shader.h"
+#include "common/Shader.h"
 
 // Window dimensions
 const GLuint WIDTH = 800, HEIGHT = 600;

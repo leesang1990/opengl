@@ -9,7 +9,7 @@
 // Window dimensions
 const GLuint WIDTH = 800, HEIGHT = 600;
 
-#include "Shader.h"
+#include "common/Shader.h"
 
 // The MAIN function, from here we start the application and run the game loop
 int Triangle2()

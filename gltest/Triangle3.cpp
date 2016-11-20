@@ -6,7 +6,7 @@
 
 #include <iostream>
 
-#include "Shader.h"
+#include "common/Shader.h"
 
 int Triangle3()
 {

@@ -40,20 +40,23 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>..\glm;..\soil\src;..\glew-1.11.0\include;..\glfw-3.2\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
-    <LibraryPath>..\Debug;..\glew-1.11.0\lib;..\glfw-3.2\lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\glm;..\soil\src;..\glew-1.11.0\include;..\glfw-3.2\include;..\assimp\include;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SOIL.lib;opengl32.lib;glfw3.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>assimp-vc120-mt.lib;SOIL.lib;opengl32.lib;glfw3.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>
       </SubSystem>
+      <AdditionalLibraryDirectories>..\glew-1.11.0\lib;..\glfw-3.2\lib;..\assimp\lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -63,34 +66,42 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\glm;..\soil\src;..\glew-1.11.0\include;..\glfw-3.2\include;..\assimp\include;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>assimp-vc120-mt.lib;SOIL.lib;opengl32.lib;glfw3.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\glew-1.11.0\lib;..\glfw-3.2\lib;..\assimp\lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="common\Shader.cpp" />
     <ClCompile Include="Light1.cpp" />
     <ClCompile Include="Light2.cpp" />
     <ClCompile Include="LightCasters.cpp" />
     <ClCompile Include="LightingMap.cpp" />
     <ClCompile Include="Materials.cpp" />
+    <ClCompile Include="ModelLoading.cpp" />
+    <ClCompile Include="MultipleLights.cpp" />
     <ClCompile Include="SpotLight.cpp" />
     <ClCompile Include="Texture1.cpp" />
     <ClCompile Include="Texture2.cpp" />
     <ClCompile Include="Transform1.cpp" />
     <ClCompile Include="Transform2.cpp" />
     <ClCompile Include="Triangle3.cpp" />
-    <ClCompile Include="Shader.cpp" />
     <ClCompile Include="Triangle1.cpp" />
     <ClCompile Include="Triangle2.cpp" />
     <ClCompile Include="UseCamera2.cpp" />
     <ClCompile Include="UseCamera1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camera.hpp" />
-    <ClInclude Include="Shader.h" />
+    <ClInclude Include="common\Camera.hpp" />
+    <ClInclude Include="common\Mesh.hpp" />
+    <ClInclude Include="common\Model.hpp" />
+    <ClInclude Include="common\Shader.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\camera.fs" />
@@ -107,6 +118,10 @@
     <None Include="shaders\lightingmap.vs" />
     <None Include="shaders\materials.fs" />
     <None Include="shaders\materials.vs" />
+    <None Include="shaders\modelloading.fs" />
+    <None Include="shaders\modelloading.vs" />
+    <None Include="shaders\multiplelights.fs" />
+    <None Include="shaders\multiplelights.vs" />
     <None Include="shaders\shader.fs" />
     <None Include="shaders\shader.vs" />
     <None Include="shaders\spotlight.fs" />

@@ -9,8 +9,8 @@
  #include <GLFW/glfw3.h>
  
  //GL includes
- #include "Shader.h"
- #include "Camera.hpp"
+ #include "common/Shader.h"
+ #include "common/Camera.hpp"
  
  //GLM Mathemtics
  #include <glm.hpp>

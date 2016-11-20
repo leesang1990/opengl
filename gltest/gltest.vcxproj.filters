@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Shader.cpp" />
     <ClCompile Include="Triangle1.cpp" />
     <ClCompile Include="Triangle2.cpp" />
     <ClCompile Include="Triangle3.cpp" />
@@ -17,14 +16,32 @@
     <ClCompile Include="LightingMap.cpp" />
     <ClCompile Include="LightCasters.cpp" />
     <ClCompile Include="SpotLight.cpp" />
+    <ClCompile Include="MultipleLights.cpp" />
+    <ClCompile Include="common\Shader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelLoading.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Shader.h" />
-    <ClInclude Include="Camera.hpp" />
+    <ClInclude Include="common\Camera.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Mesh.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Model.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Shader.h">
+      <Filter>common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="shaders">
       <UniqueIdentifier>{e7069454-37ad-4984-b68c-ed82fd18bfa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{b11fec10-2842-437e-8080-18270c26a517}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +118,18 @@
       <Filter>shaders</Filter>
     </None>
     <None Include="shaders\spotlightsoft.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\multiplelights.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\multiplelights.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\modelloading.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\modelloading.vs">
       <Filter>shaders</Filter>
     </None>
   </ItemGroup>

@@ -16,8 +16,8 @@
 #include <gtc/type_ptr.hpp>
 
 // Other includes
-#include "Shader.h"
-#include "Camera.hpp"
+#include "common/Shader.h"
+#include "common/Camera.hpp"
 
 void do_movement();
 

@@ -8,7 +8,7 @@
 
 #include <SOIL.h>
 
-#include "Shader.h"
+#include "common/Shader.h"
 
 int Texture1()
 {

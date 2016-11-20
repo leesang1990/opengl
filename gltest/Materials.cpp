@@ -14,8 +14,8 @@
 #include <gtc/matrix_transform.hpp>
 #include <gtc/type_ptr.hpp>
 
-#include "Shader.h"
-#include "Camera.hpp"
+#include "common/Shader.h"
+#include "common/Camera.hpp"
 
 void do_movementm();
 
