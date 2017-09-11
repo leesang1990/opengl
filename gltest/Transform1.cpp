@@ -133,7 +133,6 @@ int Transform1()
 	glm::mat4 trans;
 	trans = glm::translate(trans, glm::vec3(1.0f,1.0f,0.0f));
 	vec = trans * vec;
-	std::cout << vec.x << vec.y << vec.z << std::endl;
 
 	// Game loop
 	while (!glfwWindowShouldClose(window))
